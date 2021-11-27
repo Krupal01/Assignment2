@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="603dp"
+        android:layout_above="@+id/explicitebtn"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/life_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="594dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/explicitebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/implicitebtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="gotoexplicite"
+        android:text="show in grid view" />
+
+    <Button
+        android:id="@+id/implicitebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="gotoimplicite"
+        android:text="send" />
+
+
+</RelativeLayout>
